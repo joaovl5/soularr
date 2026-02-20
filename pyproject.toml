@@ -1,0 +1,17 @@
+[project]
+name = "soularr"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "music-tag==0.4.3",
+    "pyarr==5.2.0",
+    "slskd-api==0.1.5",
+]
+
+[project.scripts]
+soularr = "soularr:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
